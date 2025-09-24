@@ -55,12 +55,6 @@ This project was developed as part of a university assignment.
 
 ---
 
-## License
-
-*(Add your license here if you want)*
-
----
-
 ## Author
 
 sv-wit
