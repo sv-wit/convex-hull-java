@@ -1,0 +1,123 @@
+body {
+    background-color: #2D3142;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    font-size: 125%;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #FFFFFF;
+}
+
+a {
+    color: #FFFFFF;
+}
+
+p {
+    
+}
+
+ul li {
+    text-decoration: none;
+    list-style: none;
+}
+
+ul.spaced li {
+    padding-top: 1em;
+}
+
+ul.spaced li ul li{
+    padding-top: 0;
+}
+
+hr.rounded {
+    border-top: .2em solid #FFFFFF;
+    border-radius: .2em;
+}
+
+div.warning {
+    border: .2em solid;
+    border-radius: 1em;
+    border-color: #FE7F2D;
+    padding: .3em;
+    margin: .5em;
+    text-align: center;
+    color: #FE7F2D;
+}
+
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.large {
+    width: 90%;
+    padding: .3em;
+}
+
+img.border {
+    border: #249EA0 solid;
+    border-radius: .5em;
+}
+
+.main {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #4F5D75;
+    padding: 2em;
+}
+
+.temp {
+    color:red;
+    text-decoration: underline;
+}
+
+.shortcut {
+    font-size: 75%;
+    color: #67C329;
+}
+
+.center {
+    text-align: center;
+}
+
+.greenUnderline {
+    text-decoration: underline .2em #3EA357;
+}
+
+.pinkUnderline {
+    text-decoration: underline .2em #DC256E;
+}
+
+.orangeUnderline {
+    text-decoration: underline .2em #FE7F2D;
+}
+
+.yellowUnderline {
+    text-decoration: underline .2em #FCCA46;
+}
+
+.closestPoint {
+    color: #DC256E;
+}
+
+.convexHull {
+    color: #FE7F2D;
+}
+
+.diameter {
+    color: #619B8A;
+}
+
+.quadrangle {
+    color:#FCCA46;
+}
+
+.triangle {
+    color: #599FD9;
+}
+
+

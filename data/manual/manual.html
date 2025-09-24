@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <title>Bedienungsanleitung</title>
+        <link rel="icon" type="image/png" href="./images/calculatorSmall.png" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main">
+
+            <h1 class="center">Bedienungsanleitung <img src="./images/calculatorSmall.png"></h1>
+            <h4 class="center">convex-hull-java sv-wit</h4>
+
+            <hr class="rounded">
+
+            <ul class="spaced">
+                <li>
+                    <a class="greenUnderline" href="#uebersicht">1. Übersicht</a>
+                    <ul>
+                        <li>1.1. Allgemeines</li>
+                        <li>1.2. Aufbau</li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="pinkUnderline" href="#menu">2. Menü</a>
+                    <ul>
+                        <li>2.1. Datei</li>
+                        <li>2.2. Ansicht</li>
+                        <li>2.3. Optionen</li>
+                        <li>2.4. Hilfe</li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="orangeUnderline" href="#seitenleiste">3. Seitenleiste</a>
+                    <ul>
+                        <li>3.1. Undo/Redo</li>
+                        <li>3.2. Anzeigeoptionen</li>
+                        <li>3.3. Zufällige Punkte</li>
+                        <li>3.4. Animation</li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="yellowUnderline" href="#zeichenflaeche">4. Zeichenfläche</a>
+                    <ul>
+                        <li>4.1. Allgemeines</li>
+                        <li>4.2. Steuerung</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <hr class="rounded">
+
+            <!-- Uebersicht -->
+            <h2 id="uebersicht" class="greenUnderline">1. Übersicht</h2>
+
+            <h4>1.1. Allgemeines</h4>
+            <p>
+                Dieses Programm dient der Anzeige einer Punktmenge, sowie der Berechnung der konvexen Hüllen aus dieser.
+                Zusätzlich können die folgenden Eigenschaften der konvexen Hülle angezeigt werden: <br>
+                <ul>
+                    <li>Der Durchmesser</li>
+                    <li>Das größte enthaltene Viereck</li>
+                    <li>Das größte enthaltene Dreieck</li>
+                </ul>
+                Eine Punktmenge kann mithilfe des Programm erstellt, oder aus einer Datei geladen werden.
+                <br><br>
+                Da es sich bei der dargestellten Punktmenge um eine Menge im mathematischen Sinne handelt, ist es nicht möglich, 
+                das zwei Punkte dieselben Koordinaten besitzen. 
+                Sollte eine Datei eingelesen werden, die mehrere identische Punkte besitzt, wird nur einer dieser Punkte in die Punktmenge aufgenommen.
+            </p>
+            <h4>1.2. Aufbau</h4>
+            <img class="large center border" src="./images/overview.png">
+            <p>
+                <span class="pinkUnderline">Menü:</span>
+                <br>
+                Im oberen Bereich des Programms befindet sich das Menü. <br>
+                Die zugehörigen Schaltflächen werden in Abschnitt 2. erläutert.
+            </p>
+            <p>
+                <span class="orangeUnderline">Seitenleiste:</span>
+                <br>
+                An der linken Seite des Programms befindet sich die Seitenleiste. <br>
+                Die zugehörigen Schaltflächen werden in Abschnitt 3. erläutert.
+            </p>
+            <p>
+                <span class="yellowUnderline">Zeichenfläche:</span>
+                <br>
+                Im zentralen Bereich des Programms befindet sich die Zeichenfläche. <br>
+                Die Bedienung der Zeichenfläche findet hauptsächlich über die Maus statt und wird in Abschnitt 4. erläutert.
+            </p>
+            <hr class="rounded">
+
+            <!-- Menu -->
+            <h2 id="menu" class="pinkUnderline">2. Menü:</h2>
+            <h4>2.1. Datei:</h4>
+            <p>
+                Neu:
+                <span class="shortcut">(Strg+N)</span> <br>
+                Erstellt eine neue, leere Zeichenfläche.
+            </p>
+            <p>
+                Öffnen: 
+                <span class="shortcut">(Strg+O)</span> <br>
+                Öffnet eine Datei, die Punkte enthält.
+            </p>
+            <p>
+                Speichern: 
+                <span class="shortcut">(Strg+S)</span> <br>
+                Speichert die aktuellen Punkte in die zuletzt geöffnete oder gespeicherte Datei. Diese Option ist nur verfügbar,
+                nachdem eine Datei geöffnet oder bereits mittels "Speichern unter.." gespeichert wurde.
+            </p>
+            <p>
+                Speuchern unter..: 
+                <span class="shortcut">(Strg+Umschalt+S)</span> <br>
+                Speichert die aktuellen Punkte in die angegebene Datei. Hierbei wird ein Auswahldialog angezeigt, in welchem
+                der gewünschte Speicherort ausgewählt werden kann.
+            </p>
+            <p>
+                Beenden: Beendet das Programm.
+            </p>
+
+            <h4>2.2. Ansicht:</h4>
+            <p>
+                Ansicht zentrieren: 
+                <span class="shortcut">(Strg+V)</span> <br>
+                Zentriert die aktuellen Punkte so, dass sie mittig auf der Zeichenfläche dargestellt werden.
+            </p>
+            <p>
+                Mauskoordinaten und Zoomfaktor anzeigen:
+                <br>
+                Diese Option legt fest, ob die Mauskoordinaten und der Zoomfaktor mittig oben auf der Zeichenfläche angezeigt werden. <br>
+                Diese Option ist standardmäßig deaktiviert.
+            </p>
+            <img class="center border" src="./images/mousePositionAndZoom.png">
+
+            <p>
+                Nur Koordinaten des nächstgelegensten Punkts anzeigen:
+                <br>
+                Wenn diese Option aktiviert ist, werden nur die Koordinaten des nächstgelegensten Punktes angezeigt. <br>
+                (Siehe <a class="yellowUnderline" href="#zeichenflaeche">4.2. in Zeichenfläche</a> )
+            </p>
+
+            <h4>2.3. Optionen:</h4>
+            <p>
+                Umschalt-Taste zum Verschieben von Punkten verwenden:
+                <br>
+                Diese Option legt fest, ob zum Verschieben eines Punktes die Umschalt-Taste gehalten werden muss. <br>
+                Diese Option ist standardmäßig aktivier.
+            </p>
+
+            <h4>2.4. Hilfe:</h4>
+            <p>
+                Bedienungsanleitung: 
+                <br>
+                Öffnet die Bedienungsanleitung.
+            </p>
+
+            <hr class="rounded">
+
+            <!-- Seitenleiste -->
+            <h2 id="seitenleiste" class="orangeUnderline">3. Seitenleiste</h2>
+
+            <h4>3.1. Undo/Redo</h4>
+            <p>
+                Mit der Undo-Schaltfläche können mehrere Schritte bis zum Ursprung rückgängig gemacht werden.
+                Also bis dorthin, wo noch keine Änderungen vorhanden sind. 
+                Auf einer neuen Zeichenfläche ist der Ursprung zum Beispiel die leere Zeichenfläche.
+                <br><br>
+                Neben der Undo-Schaltfläche gibt es auch noch die Redo-Schaltfläche. Wenn zum Beispiel eine Aktion durch die Undo-Schaltfläche rückgängig gemacht wurde,
+                ist es möglich, diese Aktion wieder zurück zu holen.   
+                <br><br>
+                Aktionen die mittels der Undo- und Redo-Schaltfläche beeinflust werden können sind die folgenden:
+                <ul>
+                    <li>Das Erstellen eines Punktes.</li>
+                    <li>Das Löschen eines Punktes.</li>
+                    <li>Das Verschieben eines Punktes.</li>
+                    <li>Das Erzeugen von zufälligen Punkten.</li>
+                </ul>
+            </p>
+            <img class="center border" src="./images/undoRedo.png">
+            <div class="warning">Achtung: Das Speichern oder Überschreiben einer Datei kann nicht rückgängig gemacht werden!</div>
+
+            <h4>3.2. Anzeigeoptionen</h4>
+            <p>
+                Koordinaten anzeigen:
+                <br>
+                Zeigt die Koordinaten der einzelnen Punkte aus der Punktmenge an.
+            </p>
+            <p>
+                Konvexe Hülle anzeigen:
+                <br>
+                Zeigt die Konvexe Hülle der Punktmenge an.
+            </p>
+            <p>
+                Durchmesser anzeigen:
+                <br>
+                Zeigt den Durchmesser der konvexen Hülle an. Es ist nicht nötig, dass hierfür auch die konvexe Hülle angezeigt wird.
+            </p>
+            <p>
+                Größtes Viereck anzeigen:
+                <br>
+                Zeigt das größte enthaltene Viereck innerhalb der konvexen Hülle an. Es ist nicht nötig, dass hierfür auch die konvexe Hülle angezeigt wird.
+            </p>
+            <p>
+                Größtes Dreieck anzeigen:
+                <br>
+                Zeigt das größte enthaltene Dreieck innerhalb der konvexen Hülle an. Es ist nicht nötig, dass hierfür auch die konvexe Hülle angezeigt wird.
+            </p>
+            <img class="center border" src="./images/displayOptions.png">
+
+            <h4>3.3. Zufällige Punkte</h4>
+            <p>
+                Mithilfe dieser Schaltflächen kann eine feste Anzahl an zufällig generierten Punkten der bestehenden Punktmenge hinzugefügt werden.
+                Diese Punkte werden an zufälligen Koordinaten innerhalb des Sichtbereichs generiert. 
+            </p>
+            <img class="center border" src="./images/randomPoints.png">
+            <div class="warning">Achtung: Es muss nicht immer die angegebene Menge an Punkten generiert werden. 
+                Sollte ein zufälliger Punkt auf der Position eines bereits bestehenden Punktes generiert werden, wird dieser nicht hinzugefügt!</div>
+
+            <h4>3.4. Animation</h4>
+            <p>
+                Animation anzeigen:
+                <br>
+                Zeigt die Animation der rotierenden Messschieber an und aktiviert die zugehörigen Steuerelemente. <br>
+            </p>
+            <p>
+                Start- und Stop-Schaltfläche:
+                <br>
+                Startet beziehungsweise stoppt die Animation.
+            </p>
+            <p>
+                Geschwindigkeit:
+                <br>
+                Legt die Animationsgeschwindigkeit fest, mit welcher die rotierenden Messschieber um die konvexe Hülle rotieren.
+            </p>
+            <p>
+                In dem Fall, dass sich die Punktmenge ändert, während die Animation aktiv ist, wird die Animation in ihren Ausgangszustand zurückgesetzt.
+            </p>
+            <img class="center border" src="./images/animation.png">
+
+            <hr class="rounded">
+            
+            <!-- Zeichenflaeche -->
+            <h2 id="zeichenflaeche" class="yellowUnderline">4. Zeichenfläche</h2>
+
+            <h4>4.2. Allgemeines</h4>
+
+            <p>
+                Nächstgelegenster Punkt:
+                <br>
+                Der Punkt, der am nächsten zu der Maus ist, wird farblich durch eine <span class="closestPoint">Pinke Umrandung</span> hervorgehoben.
+                Ein Löschen oder Verschieben wird immer auf den nächstgelegensten Punkt angewendet.
+            </p>
+            <img class="center border" src="./images/closestPoint.png">
+
+            <p>
+                Konvexe Hülle:
+                <br>
+                Die konvexe Hülle einer Punktmenge wird farblich als <span class="convexHull">Orange Linie</span> auf der Zeichenfläche dargestellt.
+            </p>
+            <p>
+                Durchmesser:
+                <br>
+                Der Durchmesser der konvexen Hülle wird farblich als <span class="diameter">Grün-cyane Linie</span> auf der Zeichenfläche dargestellt.
+            </p>
+            <p>
+                Größtes Viereck:
+                <br>
+                Das größte enthaltene Viereck der konvexen Hülle wird farblich als <span class="quadrangle">Gelbe Linie</span> auf der Zeichenfläche dargestellt.
+            </p>
+            <p>
+                Größtes Dreieck:
+                <br>
+                Das größte enthaltene Dreieck der konvexen Hülle wird farblich als <span class="triangle">Hellblaue Linie</span> auf der Zeichenfläche dargestellt.
+            </p>
+
+            <h4>4.2. Maussteuerung</h4>
+            <p>
+                Linke Maustaste drücken:
+                <br>
+                Erstellt einen neuen Punkt an der Mausposition, wenn dort noch kein Punkt existiert.
+            </p>
+            <p>
+                Rechte Maustaste drücken:
+                <br>
+                Entfernt den nächstgelegensten Punkt.
+            </p>
+            <p>
+                Linke Maustaste gedrückt halten und die Maus ziehen:
+                <br>
+                Verschiebt die Ansicht in die gezogene Mausrichtung.
+            </p>
+            <p>
+                Umschalt-Taste + Linke Maustaste gerdrückt halten und die Maus ziehen:
+                <br>
+                Verschiebt den nächstgelegensten Punkt an die Mausposition.
+                <br>
+                In den Optionen lässt sich einstellen, dass das Verschieben eines Punktes auch ohne gedrückte Umschalt-Taste möglich ist.
+            </p>
+
+        </div>
+    </body>
+</html>

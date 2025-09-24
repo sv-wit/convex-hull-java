@@ -1,0 +1,25 @@
+# Eclipse-specific files and folders
+.classpath
+.project
+.settings/
+
+# Build output folders (compiled classes)
+bin/
+out/
+build/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# SVN metadata folders (already deleted, but just in case)
+.svn/
+
+# Editor-specific files (e.g. IntelliJ, VS Code)
+*.iml
+.idea/
+.vscode/
+*.swp
