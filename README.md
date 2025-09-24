@@ -44,7 +44,7 @@ The JavaDoc is available in the `doc` folder.
 
 ## Screenshots
 
-![Main GUI](Screenshots/screenshot.png)  
+![Main GUI](screenshots/screenshot.png)  
 *Figure 1: Main GUI of the application*
 
 ---
