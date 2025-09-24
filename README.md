@@ -3,7 +3,8 @@
 This project computes the convex hull of a given or newly created set of points.  
 You can import a file with points or add new points by clicking in the GUI.  
 
-**Note:** This project was developed as part of a university assignment.
+**Note:** This project was developed as part of a university assignment and is my first larger project.  
+If you decide to review or critique the code, please do so constructively! 😄
 
 ---
 
