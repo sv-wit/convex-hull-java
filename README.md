@@ -15,6 +15,7 @@ If you decide to review or critique the code, please do so constructively! 😄
 - Finds the largest quadrilateral contained inside the hull
 - Finds the largest triangle contained inside the hull
 - Interactive GUI to add points and visualize results
+- Undo and Redo functionality for point editing
 
 ---
 
@@ -35,11 +36,30 @@ Tested with **JDK 17.0.2**
 
 ---
 
-## Documentation
+## Language Information
 
-**⚠️ NOTE: The documentation and GUI are in German due to university requirements.**
+**⚠️ NOTE:**  
+Due to university requirements, both the GUI and the documentation are in German.  
 
-The JavaDoc is available in the `doc` folder.
+The JavaDoc documentation can be found in the `doc` folder.  
+Please keep this in mind when using the application.
+
+---
+
+## Data Format
+
+The program accepts point data files in the following format:
+
+- Each point is represented on a separate line.
+- Each line contains two numbers: the X and Y coordinates, separated by a space or a comma.
+- By default, files use the `.points` extension.
+
+Example:
+```
+10 15
+20 25
+30 35
+```
 
 ---
 
