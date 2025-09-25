@@ -51,7 +51,7 @@ Please keep this in mind when using the application.
 The program accepts point data files in the following format:
 
 - Each point is represented on a separate line.
-- Each line contains two numbers: the X and Y coordinates, separated by a space or a comma.
+- Each line contains two numbers: the X and Y coordinates, separated by a space.
 - By default, files use the `.points` extension.
 
 Example:
