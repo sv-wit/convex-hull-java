@@ -72,7 +72,7 @@ Example:
 
 ## About
 
-This project was developed as part of a university assignment.
+This project was developed as part of a university assignment in 2022.
 
 ---
 
